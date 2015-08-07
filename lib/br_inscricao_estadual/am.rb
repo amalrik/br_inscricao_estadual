@@ -1,7 +1,7 @@
 module BrInscricaoEstadual
 	class AM < Common
     protected
-      PESO = [9, 9, 9, 9, 9, 9, 9, 9]
+      PESO = [9, 8, 7, 6, 5, 4, 3, 2]
       DIGITS_ZERO = [10]
 
       def calculate_verify(peso)
