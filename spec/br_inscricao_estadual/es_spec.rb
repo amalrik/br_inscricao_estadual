@@ -8,6 +8,16 @@ describe BrInscricaoEstadual::ES do
 		insc_est.should be_valid
 	end
 
+  it "should valid Espirito Santo states incription" do
+    insc_est = BrInscricaoEstadual::ES.new('63191297-5')
+    insc_est.should be_valid
+  end
+
+  it "should valid Espirito Santo states incription" do
+    insc_est = BrInscricaoEstadual::ES.new('99160510-1')
+    insc_est.should be_valid
+  end
+
 	it "should not valid Espirito Santo states incription" do
 		insc_est = BrInscricaoEstadual::ES.new('99999999-1')
 		insc_est.should_not be_valid
